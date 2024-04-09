@@ -15,9 +15,9 @@ Scenario('Tentando Logar digitando apenas o e-mail',  ({ I }) => {
 
     I.amOnPage('http://automationpratice.com.br/')
     I.click('Login')
-    I.fillField('#user', 'teste@teste')
+    I.fillField('#user', 'lan@gmail.com')
     I.click('#btnLogin')
-    I.waitForText('E-mail inválido.')
+    I.waitForText('Senha inválida.')
 
     
 });
