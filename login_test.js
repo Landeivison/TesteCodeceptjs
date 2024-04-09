@@ -9,7 +9,7 @@ Scenario('Login com sucesso',  ({ I }) => {
     I.click('#btnLogin')
     I.waitForText('Login realizado', 3)
     
-});
+}).tag('@sucesso')
 
 Scenario('Tentando Logar digitando apenas o e-mail',  ({ I }) => {
 
@@ -19,8 +19,7 @@ Scenario('Tentando Logar digitando apenas o e-mail',  ({ I }) => {
     I.click('#btnLogin')
     I.waitForText('Senha inválida.')
 
-    
-});
+})
 
 Scenario('Tentando logar sem digitar e-mail e senha',  ({ I }) => {
 
@@ -29,8 +28,7 @@ Scenario('Tentando logar sem digitar e-mail e senha',  ({ I }) => {
     I.click('#btnLogin')
     I.waitForText('E-mail inválido.')
 
-    
-});
+})
 
 Scenario('Tentando Logar digitando apenas a senha',  ({ I }) => {
 
@@ -40,5 +38,5 @@ Scenario('Tentando Logar digitando apenas a senha',  ({ I }) => {
     I.click('#btnLogin')
     I.waitForText('E-mail inválido.')
 
-});
+})
 
