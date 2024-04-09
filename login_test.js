@@ -34,6 +34,11 @@ Scenario('Tentando logar sem digitar e-mail e senha',  ({ I }) => {
 
 Scenario('Tentando Logar digitando apenas a senha',  ({ I }) => {
 
-   
+    I.amOnPage('http://automationpratice.com.br/')
+    I.click('Login')
+    I.fillField('#password', secret('123456'))
+    I.click('#btnLogin')
+    I.waitForText('E-mail inválido.')
+
 });
 
